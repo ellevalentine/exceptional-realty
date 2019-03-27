@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
+
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+
+/* above here are two font from google that we have embed https://fonts.google.com/?selection.family=Clicker+Script to use 
+these for example - the first one - font-family: 'Elsie Swash Caps', cursive; so if it doesnt have the elsie font it ill defualt to 
+cursive. */
+
+
+
+/* This is a comment!- single line */
+
+
+/* This is 
+a comment!- 
+multii line */
+
+/* CSS Syntax:
+
+selectors {
+property:valie;
+property:valie;
+property:valie;
+}
+
+*/
+
+/* Type selector- this allows us to select elements using their tag name */
+
+p{/*this will select all <p> elements} */
+font-size: 1em; /* which is the defaul fontsize 16 pixels - this can be set in px(pixcels this is always the same no matter what),
+ ?pt(some amont of points - this may vary depending on your browers), 100%(a percentage - this is a reletive amount), 
+ 1em(using em's - this is also a releative amount 16px = 16/16= 1em - we devide by 16 since thats the default)  */
+ line-height: 1.5em ;/* this will change the high between each line and the paragraph*/ 
+
+}
+
+
+figcaption{
+/*font-weight: normal;
+font-size:0.75em;
+line-height: 1.5em;
+font-family: Georgia, "New Times Roman" (since there is a space in the name we have to use quotes), serif; 
+here it will first try to use Georgia but if it does have that it will use new times roman and if not that the
+ generic font serif */
+ font:normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+
+/* here we have summerised - instead of witing out each one we can use the font feature to combine alltogether */
+
+color: #777 ;
+/* color: #000000  we could here use any of the 16 typical color names( red grey black etc) or we can use hexidecimal dumber '#000000' here
+we have the hash sign followed by 6 0's. they can range from 0-9 or A-F - the first two zeors represent the colour red, the 
+2nf two zeros represent green, and the last two blue (#00(red)00(green)00(blue))
+0 is in absence of light so hench black the lowest value is 0 ... 9 then A..F hench F is the highest value - for examle #FF0000
+This would be the color red. 
+If you have the same double digets for each like #AA4488 you can just wite this #A48
+
+you can also use rgba(here range of 0-255, 0, 0, 1 (this ranges from 0-1 as in 0 to 100percent so 50 percent= 0.5)) values 
+Can also use the digital colour meter tool on the mac to collect the information on colours and copy them for rgba
+*/
+
+text-align: right ; 
+
+
+/* class selectors: can be applied to as many elements as you like unlike type selectors where its good to just styling 
+one type of element - for class selector we can use on many different type of elements if those of different type
+*/
+
+.milk-text { /* select elements with class="milk-text" you can then go into text and assign text the class milk text
+so this applies - you can add more than one class*/
+font: bold 2.6em 'Elsie Swash Caps', cursive;
+color: white;
+text-shadow: 0 2px 3px #000; /*  here first value is the horizontal off set, the 2nd is the vertical, 3rd is the blur radius 
+and 4th is the colour short hand for #000000 which is black*/
+
+ }
+
+
+/* ID selector: you can only apply to one unique element per page */
+
+#logo{  /* select elements with class="logo" */
+
+background: aqua;
+}
+
+
+
+/* Descendent selector: will select the descendents within another parent element */
+
+#logo h1 {/* select <h1> if inside the id="logo" */
+font-family: 'Clicker Script', cursive;
+
+}
+
+#logo h2 {
+font-family: 'Elsie Swash Caps', cursive;
+
+}
+
+
+/* Psudeo Selectors: can use this to style a link in its different states*/
+
+#details a:link, #details a:visited{
+color:black;
+text-decoration: none;
+}
+
+#details a:hover{
+
+	color:black ;
+	text-decoration: underline;
+}
+
+#details a:active {
+
+	color:red;
+	text-decoration: none;
+}
+
+
+
